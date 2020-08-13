@@ -49,7 +49,7 @@ const round = (value, decimal = 0) => {
 };
 
 const getAirQuality = (value, airQualityRating) => {
-    // Caculate air quality based on value.pm100, value.pm25, and the configured range
+    // Calculate air quality based on value.pm100, value.pm25, and the configured range
     if (typeof value === 'undefined' || typeof value.pm100 === 'undefined' || typeof value.pm25 === 'undefined') {
         return Characteristic.AirQuality.UNKNOWN;
     }
