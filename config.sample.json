@@ -1,0 +1,59 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "12:34:56:78:90:AB",
+    "port": 1234,
+    "pin": "123-45-678"
+  },
+  "accessories": [
+    {
+      "accessory": "InfluxAir",
+      "name": "Air Sensors",
+      "sensor_names": {
+        "temperature": "Temperature Sensor",
+        "humidity": "Humidity Sensor",
+        "air_quality": "Air Quality Sensor"
+      },
+      "schema": {
+        "temperature": {
+          "field": "temperature",
+          "measurement": "air"
+        },
+        "humidity": {
+          "field": "humidity",
+          "measurement": "air"
+        },
+        "air_quality": {
+          "fields": {
+            "pm2_5": "pm25",
+            "pm10": "pm100"
+          },
+          "measurement": "pm"
+        }
+      },
+      "air_quality_rating": {
+        "EXCELLENT": {
+          "max_pm10": 15,
+          "max_pm2_5": 10
+        },
+        "GOOD": {
+          "max_pm10": 30,
+          "max_pm2_5": 15
+        },
+        "FAIR": {
+          "max_pm10": 50,
+          "max_pm2_5": 25
+        },
+        "INFERIOR": {
+          "max_pm10": 70,
+          "max_pm2_5": 35
+        }
+      },
+      "influx": {
+        "host": "127.0.0.1",
+        "database": "home"
+      }
+    }
+  ],
+  "platforms": []
+}

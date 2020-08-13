@@ -1,0 +1,28 @@
+{
+  "name": "homebridge-influx-air",
+  "version": "0.0.1",
+  "description": "Homebridge plugin that exposes temperature, humidity, and air quality from an InfluxDB instance.",
+  "license": "MIT",
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "influxdb"
+  ],
+  "engines": {
+    "node": ">=11.0.0",
+    "homebridge": ">=0.4.5"
+  },
+  "author": "Xiaoyu Tai (https://github.com/xtai)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xtai/homebridge-influx-air.git"
+  },
+  "dependencies": {
+    "influx": "^5.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/xtai/homebridge-influx-air/issues"
+  },
+  "homepage": "https://github.com/xtai/homebridge-influx-air#readme",
+  "main": "index.js"
+}
