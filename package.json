@@ -1,12 +1,15 @@
 {
   "name": "homebridge-influx-air",
-  "version": "0.0.1",
-  "description": "Homebridge plugin that exposes temperature, humidity, and air quality from an InfluxDB instance.",
+  "version": "0.0.2",
+  "description": "A Homebridge plugin that exposes temperature, humidity, and air quality from an InfluxDB instance.",
   "license": "MIT",
   "keywords": [
     "homebridge-plugin",
     "homebridge",
-    "influxdb"
+    "influxdb",
+    "air quality",
+    "temperature",
+    "humidity"
   ],
   "engines": {
     "node": ">=11.0.0",
